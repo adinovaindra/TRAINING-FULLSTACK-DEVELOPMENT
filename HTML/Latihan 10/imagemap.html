@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Map</title>
+	<style type="text/css">
+		body {
+			background-color: #1D2A35;
+			color: white;
+			font-family: sans-serif;
+		}
+
+		h1	{
+			font-weight: lighter;
+		}
+	</style>
+</head>
+<body>
+
+<h1>Image Maps</h1>
+<p>The HTML <code style="font-size: 15px; color: red;">&lt;map&gt;</code> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <code style="font-size: 15px; color: red;">&lt;area&gt;</code> tags.</p>
+
+<p>Try to click on the computer, phone, or the cup of coffee in the image below:</p>
+<br><br><br><br>
+<img src="image/workplace.jpg" alt="workplace" title="workplace" usemap="#workplace">
+
+<map name="workplace">
+	<area shape="rect" coords="33,43,274,347" href="laptop_page.html" target="_blank" alt="laptop">
+	<area shape="rect" coords="288,172,334,251" href="iphone_page.html" target="_blank" alt="iphone">
+	<area shape="circle" coords="339,301,48" href="coffee_page.html" target="_blank" alt="coffee">
+</map>
+
+</body>
+</html>

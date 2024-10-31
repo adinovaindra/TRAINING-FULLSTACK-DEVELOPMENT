@@ -1,0 +1,35 @@
+body {
+    background-color: #172919; /* Sets the background color */
+    background-image: url('image/field.jpg'); /* Sets the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: 100% 25%; /* Ensures the image covers the entire background */
+    background-position: top center; /* Centers the background image */
+    ; /* Adds some padding to make the background visible around the text */
+    color: black; /* Changes the text color for better readability */
+}
+
+h1, h2 {
+	color: ghostwhite;
+}
+
+ul li a {
+	color: darkgoldenrod;
+}
+
+ol li a {
+	color: darkred;
+}
+
+.link {
+	font-weight: bold;
+}
+
+.p1 {
+	color: orange;
+}
+
+.p2 {
+	color: darkred;
+	font-weight: bold;
+	font-size: 30px;
+}
