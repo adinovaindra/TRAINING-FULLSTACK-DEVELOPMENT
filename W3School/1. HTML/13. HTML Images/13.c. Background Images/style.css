@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: beige;
+}
+
+h1{
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+span {
+    color: red;
+    background-color: silver;
+}
+
+.quote {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 2em 0px;
+    height: 10em;
+    background-image: url(backgroundImageforParagraph.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.smallImage {
+    height: 400px;
+    background-image: url(smallImage.jpg);
+}
