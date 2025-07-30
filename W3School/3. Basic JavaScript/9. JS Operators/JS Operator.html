@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Operators</title>
+  </head>
+  <body style="background-color: black; color: azure">
+    <h1>JavaScript Operators</h1>
+    <h2>JavaScript Assignment.</h2>
+    <p>The <b>Assignment Operator</b> (=) assigns a value to a variable.</p>
+    <p>
+      let x = 10
+      <br />
+      let y = 15
+    </p>
+
+    <h2>JavaScript Addition</h2>
+    <p>The <b>Addition Operator</b> (+) adds numbers :</p>
+
+    <p id="demo"></p>
+
+    <h2>JavaScript Multiplication</h2>
+    <p>The <b>Multiplication Operator</b> (*) multiplies numbers :</p>
+
+    <p id="demo2"></p>
+
+    <h2>Types of JavaScript Operators</h2>
+    <p>There are different types of JavaScript operators :</p>
+    <ul>
+      <li>Arithmetic Operators</li>
+      <li>Assignment Operators</li>
+      <li>Compariison Operators</li>
+      <li>String Operators</li>
+      <li>Logical Operators</li>
+      <li>Bitwise Operators</li>
+      <li>Ternary Operators</li>
+      <li>Type Operators</li>
+    </ul>
+
+    <h2>Arithmetic Operators</h2>
+    <p>
+      <b>Arithmetic Operators</b> are used to perform arithmetic on numbers.
+      Sample is shown below :
+    </p>
+
+    <p id="demo3"></p>
+
+    <h2>JavaScript Assignment Operators</h2>
+    <p>Assignment operators assign values to JavaScript.
+      <br>
+      The <b>Addition Assignment Operator</b> (+=) adds a value to a variable. The example is given below :
+    </p>
+    <p id="demo4"></p>
+
+    <h2>JavaScript String Comparison</h2>
+    <p>All the comparison operators above can also be used on strings :</p>
+    <p id="demo5"></p>
+    
+    <p>from the sample given above, we can conclude that strings are compared alphabetically. How about comparing number with string formated like this ("5" &lt 20?)
+      <br>
+      in JavaScript, the number with string format, it will directly converted into number. as sample given below :
+    </p>
+
+    <p id="demo6"></p>
+
+    <h2>JavaScript String Addition</h2>
+    <p>The + can aso be used to add (concatenate) strings :
+    </p>
+
+    <p id="demo7"></p>
+
+    <p>The += assignment operator can also be used to add (concatenate) strings:</p>
+    <p id="demo8"></p>
+
+    <h2>JavaScript Logical Operators</h2>
+    <p>There are 3 logical operators in JavaScript. there are :
+      <ul>
+        <li>&& (logical and)</li>
+        <li>|| (logial or)</li>
+        <li>! (logical not)</li>
+      </ul>
+    </p>
+
+    <h2>JavaScript Type Operators</h2>
+    <p>Meanwhile, there are 2 type operators in JavaScript. There are :
+      <ul>
+        <li>typeof = return the type of a variable</li>
+        <li>instanceof = return true if an object is an instance of an object type.</li>
+      </ul>
+    </p>
+    <script>
+      let x = 10;
+      let y = 15;
+      let z = x + y;
+      let multiply = x * y;
+      document.getElementById(
+        "demo"
+      ).innerHTML = `The value of x is ${x}. the value of y is ${y}. So, x + x is ${z}.`;
+
+      document.getElementById(
+        "demo2"
+      ).innerHTML = `If we multiply the x and y, the result will be ${multiply}.`;
+
+      {
+        let x = 50;
+        let y = 100;
+        let z = (x + y) * 25;
+        document.getElementById(
+          "demo3"
+        ).innerHTML = `x = 50 <br> y = 100 <br> (x + y) x 25 = ${z}.`;
+
+        {
+          let x = "Hello "
+          x += 8 + 8 + " String " + 5 + 5
+          document.getElementById('demo4').innerHTML = `let x = 5<br> x+=10 will be ${x}.`
+        }
+
+        let text1 = "A"
+        let text2 = "B"
+        let result = text1 < text2
+        document.getElementById('demo5').innerHTML = `let text1 = ${text1}. <br> let text2 =  ${text2}. <br> so the result from text1 < text2 is <b>${result}</b>.`
+
+        {
+          let x = "50"
+          let y = 100
+          let z = x < y
+          document.getElementById('demo6').innerHTML = `let x = "50".<br> let y = "100". <br> So, x < y is ${z}.`
+        }
+
+        {
+          let text1 = "John"
+          let text2 = "Doe"
+          let text3 = text1 + " " + text2
+
+          document.getElementById('demo7').innerHTML = `let text1 = "John".
+          <br>
+          let text2 = "Doe".
+          br
+          If we sum the text1 and text2, the result will be ${text3}.`
+        }
+        {
+          let x = "Today is very "
+          x += "a hot day."
+          document.getElementById('demo8').innerHTML = x
+        }
+      }
+    </script>
+  </body>
+</html>

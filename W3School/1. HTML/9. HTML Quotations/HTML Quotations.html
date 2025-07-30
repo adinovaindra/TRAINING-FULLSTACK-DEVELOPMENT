@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Quotations</title>
+    <style>
+      span {
+        background-color: silver;
+        color: red;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body style="background-color: black; color: beige">
+    <h1>HTML Quotations and Citation Elements</h1>
+    <p>
+      In this chapter we will go through the <span>&ltblockquote&gt</span>,
+      <span>&ltq&gt</span>, <span>&ltabbr&gt</span>, <span>&ltaddress&gt</span>,
+      <span>&ltcite&gt</span>, and <span>&ltbdo&gt</span> HTML elements.
+    </p>
+
+    <h1>HTML &ltblockquote&gt for Quotations</h1>
+    <p>
+      The HTML <span>&ltblockquote&gt</span> element defines a section that is
+      quoted from another source. Browser usually indent
+      <span>&ltblockquote&gt</span> elements. Example is given below :
+    </p>
+
+    <p>Here is a quote from Maryline Monroe website :</p>
+    <blockquote cite="https://www.goodreads.com/quotes">
+      I'm selfish, impatient and a little insecure. I make mistakes, I am out of
+      control and at times hard to handle. But if you can't handle me at my
+      worst, then you sure as hell don't deserve me at my best.
+    </blockquote>
+
+    <h1>HTML &ltq&gt for Short Quotations</h1>
+    <p>
+      The HTML <span>&ltq&gt</span> tag defines a short quotation. Browsers
+      normally insert quotation marks around the quotation. Example is given
+      below :
+    </p>
+
+    <p>Oscar Wilde said, <q>Be yourself; everyone else is already taken.</q></p>
+
+    <h1>HTML &ltabbr&gt for Abbreviations</h1>
+    <p>
+      The HTML <span>&ltabbr&gt</span> tag defines an abbreviation or an
+      acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". <br /><br />
+      Marking abbreviations can give useful informmation to browsers,
+      translation systems and search-engines.
+      <br /><br />
+      <b>Tips</b>: Use the global title attribute to show the description for
+      the abbreviation/acronym when you hover the element. Example is given
+      below :
+    </p>
+
+    <p>
+      The <abbr title="World Health Organization">WHO</abbr> was founded in
+      1948.
+    </p>
+
+    <h1>HTML &ltaddress&gt for Contact Information</h1>
+    <p>
+      The HTML <span>&ltaddress&gt</span> tag defines the contact information
+      for the author/owner of a document or an article. <br /><br />
+      The contact information can be an email address, URL, physical address,
+      phone number, social media handle, etc.
+      <br /><br />
+      The text in the <span>&address&gt</span> element usually renders in
+      italic, and browsers will always add a line break before and after the
+      <span>&ltaddress&gt</span> element. Example is given below :
+    </p>
+
+    <address>
+      Griya Sampangan 17 Jl. Sampangan RT 17 No 17
+      <br />
+      Mantup, Baturetno, Banguntapan
+      <br />
+      Bantul, Daerah Istimewa Yogyakarta 55197
+    </address>
+
+    <h1>HTML &ltcite&gt for Work Title</h1>
+    <p>The HTML <span>&ltcite&gt</span> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc).</p>
+
+    <p><strong>note :</strong> A person's name is not the title of a work.</p>
+    <p>The text in the <span>&ltcite&gt</span> element usually renders in <i>italic</i>. Example is given below :</p>
+
+    <p><cite>The Scream</cite> by : Edvard Munch. Painted in 1893.</p>
+
+    <h1>HTML &ltbdo&gt for Bi-Directional Override</h1>
+    <p>BDO stands for Bi-Directional Override.
+      <br><br>
+      The HTML <span>&ltbdo&gt</span> tag is used to override the current text direction. Example is given below :
+    </p>
+
+    <p><bdo dir="rtl">.saM gnaK enarupeS</bdo></p>
+
+    <script>
+      window.onload = () => {
+        setTimeout(() => {
+          window.scrollTo(0, document.body.scrollHeight);
+        }, 100);
+      };
+    </script>
+  </body>
+</html>

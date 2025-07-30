@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Images</title>
+    <style>
+      body {
+        background-color: #1d2a35;
+        color: beige;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      span {
+        background-color: #313d47;
+        color: #da655b;
+      }
+
+      table,
+      th,
+      td {
+        margin: 2em auto;
+        justify-content: center;
+        border: 1px solid white;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Images</h1>
+    <p>Images can improve the design and the appearance of a web page.</p>
+
+    <h1>HTML Images Syntax</h1>
+    <p>
+      The HTML <span>&ltimg&gt</span> tag is used to embed an image in a web
+      page. <br /><br />
+      Images are not technically inserted into a web page; images are linked to
+      web pages. The <span>&ltimg&gt</span> tag creates a holding space for the
+      referenced image. <br /><br />
+      The <span>&ltimg&gt</span> tag is empty, it contains attributes only, and
+      does not have a closing tag. <br /><br />
+      The <span>&ltimg&gt</span> tag has two required attributes :
+    </p>
+
+    <ul>
+      <li>src - Specifies the path to the image.</li>
+      <li>alt - Specifies an alternate text for the image.</li>
+    </ul>
+
+    <h2>Syntax</h2>
+
+    <pre>
+        &ltimg src="url" alt="alt text"&gt
+    </pre>
+
+    <h1>The src Attribute</h1>
+    <p>
+      The required <span>src</span> attribute specifies the path (URL) to the
+      image. <br />rb
+
+      <b>Note :</b> When a web page loads, it is the browser, at that moment,
+      that gets the image from a web server and inserts it into the page.
+      Therefore, make sure that the image actually stays in the same spot in
+      relation to the web page, otherwise your visitors will get a broken link
+      icon. The broken link icon and the <span>alt</span> text are shown if the
+      browser cannot find the image. <br />
+      Example of <q>inserting</q> image to a web page :
+    </p>
+
+    <img src="tamiyaPict.jpeg" alt="Tamiya" style="border-radius: 5px" />
+
+    <h1>The alt Attribute</h1>
+    <p>
+      The required <span>alt</span> attribute provides an alternate text for an
+      image, if the user for some reason cannot view it (because of slow
+      connection, an error in the src attribute, or if the user uses a screen
+      reader). <br /><br />
+      The value of the <span>alt</span> attribute should describe the image like
+      this :
+    </p>
+
+    <pre>
+&ltimg src="tamiyaPict.jpeg" alt="Tamiya" style="border-radius: 5px;"&gt
+</pre
+    >
+
+    <p style="background-color: #fff4a3; color: black">
+      <b>Tip: </b>A screen reader is a software program that reads the HTML
+      code, and allowss the user to <q>listen</q> to the content. Screen readers
+      are useful for people who are visually impaired or learning disabled.
+    </p>
+
+    <h1>Image Size - Width and Height</h1>
+    <p>
+      We can use the <span>style</span> attribute to specify the width and
+      height of an image, like this :
+    </p>
+
+    <p>
+      &ltimg src="tamiyaPict.jpeg" alt="Tamiya" style="border-radius: 5px;
+      width: 500px; height: 600px"&gt
+    </p>
+
+    <p style="background-color: #fff4a3; color: black">
+      <b>Note: </b>Always specify the width and height of an image. If width and
+      height are not specified, the web page might flicker while the image
+      loads.
+    </p>
+
+    <h1>Width and Height, or Style?</h1>
+    <p>
+      The <span>width</span>, <span>height</span>, and
+      <span>style</span> attributes are all valid in HTML. <br /><br />
+      However, we suggest using the <span>style</span> attribute. It prevents
+      styles sheets from changing the size of images. Why? because once we set
+      all image size in style section inside head element, it will override all
+      image size except image with style attribute.
+    </p>
+
+    <h1>Images in Another Folder</h1>
+    <p>
+      If we have our images in a sub-folder, we must include the folder name in
+      the <span>src</span>
+    </p>
+    attribute. Just treat it like relative path.
+
+    <h1>Images on Another Server/Website</h1>
+    <p>
+      Some web sites point to an image on another server. <br /><br />
+      To point to an image on another server, we must specify an absolute URL in
+      the <span>src</span> attribute.
+    </p>
+
+    <p style="background-color: #fff4a3; color: black">
+      <b>Note: </b>External images might be under copyright. If we do not get
+      permission to use it, we may be in violation of copyright laws. In
+      addition, we cannot control external images; they can suddenly be removed
+      or changed.
+    </p>
+
+    <h1>Animated Images</h1>
+    <p>HTML allows animated GIFs, like this :</p>
+
+    <img
+      src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWJuZ3c4bGd0YWZhb280YmxxZGVhOTRtejYwZmhncHZwM2Y5b3NhNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AWNxDbtHGIJDW/giphy.gif"
+      alt="smilyGif"
+      style="border-radius: 10px"
+    />
+
+    <h1>Image Floating</h1>
+    <p>
+      Use the CSS <span>float</span> property to let the image float to the
+      right or to the left of a text. Example is given below :
+    </p>
+
+    <p>
+      <img
+        src="cityLight1.jpg"
+        alt="cityLight1"
+        style="
+          float: left;
+          width: 35%;
+          height: auto;
+          margin-right: 2rem;
+          margin-bottom: 2rem;
+          border-radius: 6px;
+        "
+      />Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio ducimus
+      recusandae, laudantium autem, aspernatur molestias veritatis
+      reprehenderit, doloribus non culpa facere! Ex, nihil facilis aspernatur ab
+      est quos repudiandae saepe! <br /><br />
+      <q>This is sample of floating left</q>
+    </p>
+
+    <p style="margin-top: 4rem">
+      <img
+        src="cityLight2.jpg"
+        alt="cityLight2"
+        style="
+          width: 35%;
+          height: auto;
+          margin-left: 2rem;
+          margin-bottom: 2rem;
+          float: right;
+          border-radius: 6px;
+        "
+      />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates unde
+      ullam et at officia cumque quaerat, consequatur a nam voluptatibus in
+      vero. Numquam eaque dolorem odit! Modi porro quo dicta. <br /><br />
+      <q>This is sample of floating right</q>
+    </p>
+
+    <div style="clear: both"></div>
+
+    <p
+      style="
+        background-color: #fff4a3;
+        color: black;
+        display: flex;
+        align-items: center;
+        padding: 1em;
+      "
+    >
+      <b>Tip: </b>To learn more about CSS Float, read our
+      <ins> CSS FLoat Tutorial</ins>
+    </p>
+
+    <h1>Common Image Formats</h1>
+    <p>
+      Here are the most common image file types, which are supported in all
+      browsers (Chrome, Edge, Firefox, Safari, and Opera) :
+    </p>
+
+    <table>
+      <tr>
+        <th>Abbreviation</th>
+        <th>File Format</th>
+        <th>File Extension</th>
+      </tr>
+
+      <tr>
+        <td>APNG</td>
+        <td>Animated Portable Network Graphics</td>
+        <td>.apng</td>
+      </tr>
+      <tr>
+        <td>GIF</td>
+        <td>Graphics Intercharge Format</td>
+        <td>.gif</td>
+      </tr>
+      <tr>
+        <td>ICO</td>
+        <td>Microsoft Icon</td>
+        <td>.ico, .cur</td>
+      </tr>
+      <tr>
+        <td>JPEG</td>
+        <td>Joint Photographic Expert Group Image</td>
+        <td>.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
+      </tr>
+      <tr>
+        <td>PNG</td>
+        <td>Portable Network Graphics</td>
+        <td>.png</td>
+      </tr>
+      <tr>
+        <td>SVG</td>
+        <td>Scalable Vector Graphics</td>
+        <td>.svg</td>
+      </tr>
+    </table>
+
+    <script>
+      window.onload = () => {
+        setTimeout(() => {
+          window.scrollTo(0, document.body.scrollHeight);
+        }, 100);
+      };
+    </script>
+  </body>
+</html>

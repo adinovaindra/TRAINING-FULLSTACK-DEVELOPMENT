@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Syntax</title>
+  </head>
+  <body>
+    <h2>JavaScript Numbers</h2>
+    <p>Number can be written with or without decimals</p>
+    <p id="demo"></p>
+
+    <h2>JavaScript Strings</h2>
+    <p>Strings can be written with double or single quotes.</p>
+    <p id="demo2"></p>
+
+    <h2>JavaScript Variables</h2>
+    <p>
+      In this example, x is defined as a variable. Then, x is assigned the value
+      of 6 :
+    </p>
+    <p id="demo3"></p>
+
+    <h2>JavaScript Operators</h2>
+    <p>
+      JavaScript uses arithmetic operators to compute values (just like
+      algebra).
+    </p>
+    <p id="demo4"></p>
+
+    <h2>Assigning JavaScript Values.</h2>
+    <p>In JavaScript the = operator is used to assign values to variables.</p>
+    <p id="demo5"></p>
+
+    <h2>JavaScript Expressions.</h2>
+    <p>Expressions caompute to values.</p>
+    <p id="demo6"></p>
+    <p>it also can combine to word with +.</p>
+    <p id="demo7"></p>
+
+    <h2>JavaScript comments</h2>
+    <p>
+      comment in JavaScript is allow us to hide some code that chosen not to
+      shown in our website. You can see from the script tag.
+    </p>
+
+    <h2>JavaScript is Case Sensitive.</h2>
+    <p>Try to change lastName to lastname.</p>
+    <p id="demo8"></p>
+    <script>
+      document.getElementById("demo").innerHTML = 10.5;
+      document.getElementById("demo2").innerHTML = "Adinova Indra";
+
+      let x;
+      x = 6;
+      document.getElementById("demo3").innerHTML = x + " is variable of x.";
+
+      let a = 5;
+      let b = 12;
+
+      document.getElementById("demo4").innerHTML =
+        "A = " + a + ". B = " + b + ". So, A + B = " + (a + b) + ".";
+
+      let c = 3;
+      let d = 6;
+
+      document.getElementById(
+        "demo5"
+      ).innerHTML = `C = 3. D = 6, so C times D is ${c * d}.`;
+
+      document.getElementById(
+        "demo6"
+      ).innerHTML = `The result of  A x B x C x D x 2 is ${a * b * c * d * 2}.`;
+
+      document.getElementById("demo7").innerHTML = "Adinova" + " " + "Indra.";
+
+      // this code won't show!
+      // let abc = 12182012
+
+      let lastname, lastName;
+
+      lastName = 'Permana'
+      lastname = 'permana'
+      document.getElementById('demo8').innerHTML = lastname + ' ' + lastName
+    </script>
+  </body>
+</html>

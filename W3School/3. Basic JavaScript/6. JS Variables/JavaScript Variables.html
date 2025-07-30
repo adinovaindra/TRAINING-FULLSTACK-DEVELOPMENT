@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Variables</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <h1>JavaScript Variables</h1>
+    <p>In this example, x, y, and z are undeclared.</p>
+    <p>They are automatically declared when first used.</p>
+    <p id="demo"></p>
+    <br />
+    <p>Strings are written with quotes.</p>
+    <p>Numbers are written without quotes.</p>
+    <p id="demo2"></p>
+
+    <p>Create a variable, assign a value to it, and display it :</p>
+    <p id="demo3"></p>
+
+    <p>
+      In JavaScript, we can do arithmetic with JavaScript variables, using
+      operators like = and + :
+    </p>
+    <p id="demo4"></p>
+
+    <p>The dollar sign is treated as a letter in JavaScript names.</p>
+    <p id="demo5"></p>
+
+    <p>
+      Using underscore symbol (_) is also allowed since JavaScript treats
+      underscore as a letter.
+    </p>
+    <p id="demo6"></p>
+    <script>
+      x = 5;
+      y = 6;
+
+      z = x + y;
+
+      document.getElementById("demo").innerHTML =
+        "The value of z is : " + z + ".";
+
+      const PI = 3.14;
+      let person = "Adinova Indra";
+      let answer = "Yes I Am!";
+
+      document.getElementById("demo2").innerHTML =
+        PI + "<br>" + person + "<br>" + answer;
+
+      let carName = "Volvo";
+      const price = 500;
+      const currency = "Dollar";
+
+      document.getElementById("demo3").innerHTML = carName;
+
+      let a = 12 + 15;
+      let b = "Adinova" + " Indra";
+      let c = "5" + 2 + 3;
+      let d = 2 + 3 + "5";
+
+      document.getElementById("demo4").innerHTML =
+        a + "<br>" + b + "<br>" + c + "<br>" + d;
+
+      let $$ = "Adinova Indra Permana";
+      document.getElementById("demo5").innerHTML = $$;
+
+      let _underScore = "This is a value of underscore variable.";
+
+      document.getElementById("demo6").innerHTML = `<i> ${_underScore}`;
+    </script>
+  </body>
+</html>

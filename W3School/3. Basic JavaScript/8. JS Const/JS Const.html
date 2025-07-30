@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Const</title>
+  </head>
+  <body style="background-color: black; color: azure">
+    <h1>JS Const</h1>
+    <h2>Cannot be Reassigned.</h2>
+    <p>
+      A variable defined with the <b>const</b> keyword cannot be reassigned.
+      Example :
+    </p>
+
+    <p id="demo"></p>
+
+    <p>Statement above is the result of being reassigning a const variable.</p>
+
+    <h2>Must be Assigned.</h2>
+
+    <p>
+      unlikely a let variable, const variable must be assigned. for example :
+      <br /><br />
+      const PI = 3.14
+      <br /><br />
+      If you dopnt assign the const variable, the result will be :
+      <br /><br />
+      'const' declarations must be initialized.
+    </p>
+
+    <h2>Constant Objects and Arrays</h2>
+
+    <p>
+      The keyword const is a little misleading. It does not define a constant
+      value. It defines a constant reference to a value. Because of this I CAN
+      NOT re assign constant VALUE, OBJECT, and ARRAY. but I CAN change the
+      elements of the ARRAY and properties of OBJECT
+    </p>
+
+    <h3>Constant Array</h3>
+
+    <p>
+      in array made with <b>const</b> variable, we can change the elemets of a
+      constant array. lets take the example array below :
+    </p>
+
+    <p id="demo2"></p>
+
+    <p>
+      lets add another elements in that array. pick <b>suzuki</b> so it can be
+      added to CAR array
+    </p>
+
+    <p id="demo3"></p>
+
+    <p>now, lets change the element of <b>Honda</b> to <b>Daihatsu :</b></p>
+
+    <p id="demo4"></p>
+
+    <p>Now, remove <b>Audi</b> from the array :</p>
+
+    <p id="demo5"></p>
+
+    <p>Now, lets try to re assigned the const ARRAY :</p>
+
+    <p id="demo6"></p>
+
+    <h3>Constant Objects</h3>
+
+    <p>
+      In Objects made by constant variable, we can change the properties of a
+      constant object :
+    </p>
+
+    <pre id="demo7"></pre>
+
+    <p id="demo8"></p>
+
+    <p>
+      The statement below, we try to change the value of <b>BIODATA</b> age
+      property :
+    </p>
+
+    <p id="demo9"></p>
+
+    <p>
+      as sample given above, we can change the value of the key. the thing that
+      we cant do is reassigning the object :
+    </p>
+
+    <p id="demo10"></p>
+
+    <h2>Block Scope</h2>
+
+    <p>
+      declaring a variable with <b>const</b> is similar to <b>let</b> when it
+      comes to <b>Block Scope</b>. The x declared in the block, in this example,
+      is not the same as the x declared outside the block :
+    </p>
+
+    <p id="demo11"></p>
+
+    <p id="demo12"></p>
+
+    <script>
+      try {
+        const PI = 5;
+        PI = 3.14;
+      } catch (error) {
+        document.getElementById("demo").innerHTML = error;
+      }
+
+      const CAR = ["Toyota", "Honda", "Audi"];
+
+      document.getElementById("demo2").innerHTML = CAR;
+
+      CAR.push("Suzuki");
+
+      document.getElementById("demo3").innerHTML = CAR;
+
+      CAR[1] = "Daihatsu";
+
+      document.getElementById("demo4").innerHTML = CAR;
+
+      CAR.splice(2, 1);
+
+      document.getElementById("demo5").innerHTML = CAR;
+
+      try {
+        CAR = ["Kawasaki", "Volvo"];
+      } catch (error) {
+        document.getElementById("demo6").innerHTML = error;
+      }
+
+      const BIODATA = {
+        firstName: "Adinova",
+        middleName: "Indra",
+        lastName: "Permana",
+        yearBirth: 1999,
+      };
+
+      BIODATA.firstName = "Michael";
+
+      BIODATA.age = 2025 - BIODATA.yearBirth;
+
+      document.getElementById("demo7").innerHTML = JSON.stringify(
+        BIODATA,
+        null,
+        2
+      );
+
+      document.getElementById(
+        "demo8"
+      ).innerHTML = `Hello. My name is ${BIODATA.firstName}. I am ${BIODATA.age} years old.`;
+
+      BIODATA.age = BIODATA.age + 1;
+
+      document.getElementById(
+        "demo9"
+      ).innerHTML = `Next year, i turn ${BIODATA.age} years old.`;
+
+      try {
+        const BIODATA = {
+          hobby: "coding",
+          dream: "remote working",
+        };
+
+        BIODATA = {
+          favoriteFood: "Potato",
+          dreamCar: "SUV",
+        };
+      } catch (err) {
+        document.getElementById("demo10").innerHTML = err;
+      }
+
+      const ALPHA = "Alpha Romeo";
+
+      {
+        const ALPHA = "Buggati";
+      }
+
+      document.getElementById("demo11").innerHTML = ALPHA;
+
+      try {
+        alert(delta);
+        const delta = "Hallo";
+      } catch (error) {
+        document.getElementById("demo12").innerHTML = error;
+      }
+    </script>
+  </body>
+</html>

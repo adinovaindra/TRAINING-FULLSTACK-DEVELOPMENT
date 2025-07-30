@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Attributes</title>
+  </head>
+  <body style="background-color: black; color: beige">
+    <h1>HTML Attributes</h1>
+    <p>
+      HTML attributes provide additional information about HTML elements. It has
+      some specification :
+    </p>
+    <ul>
+      <li>All HTML elements can have <strong>attributes.</strong></li>
+      <li>
+        Attributes provide <strong>additional information</strong> about
+        elements.
+      </li>
+      <li>
+        Attributes are always specified in <strong>the start tag</strong>.
+      </li>
+      <li>
+        Attributes usually come in name/value pairs like:
+        <strong>name="value"</strong>
+      </li>
+    </ul>
+
+    <h1>The href Attribute</h1>
+    <p>
+      The <span style="color: brown">&lta&gt</span> tag defines a hyperlink. The
+      <span style="color: brown">href</span> attribute specifies the URL of the
+      page the link goes to. Example is given below :
+    </p>
+
+    <a href="https://www.google.com" target="_blank" style="color: beige"
+      >Direct link to google!</a
+    >
+
+    <h1>The src Attribute</h1>
+    <p>
+      The <span style="color: brown">&ltimg&gt</span> tag is used to embed an
+      image in an HTML page. The src attribute specifies the path to the image
+      to be displayed. Example is given below :
+    </p>
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/DHL_Logo.svg/1280px-DHL_Logo.svg.png"
+      alt="DHL"
+      style="width: 35vw; height: auto"
+    />
+
+    <h1>The alt Attribute</h1>
+    <p>
+      The required <span style="color: brown">&ltalt&gt</span> attribute for the
+      <span style="color: brown">&ltimg&gt</span> tag specifies an alternate
+      text for an image, if the image for some reason cannot be displayed. This
+      can be due to a slow connection, or an error in the src attribute. Example
+      is given below :
+    </p>
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/humb/a/ac/DHL_Logo.svg/1280px-DHL_Logo.svg.png"
+      alt="DHL"
+      style="width: 50vw; height: auto"
+    />
+
+    <h1>The Style Attribute</h1>
+    <p>
+      The <span style="color: brown">style</span> attribute is used to add
+      styles to an element, such as color, font, size, and more. Example is
+      given below :
+    </p>
+
+    <p style="color: rgb(102, 102, 239)">
+      This is a paragraph with blue color text
+    </p>
+
+    <h1>The Lang Attribute</h1>
+    <p>
+      You should always include the
+      <span style="color: brown">lang</span> attribute inside the
+      <span style="color: brown">&lthtml&gt</span> tag, to declare the language
+      of the Web page. This is meant to assist search engines and browsers. The
+      following example specifies English as the language.
+      <br />
+      Country codes can also be added to the language code in the
+      <span style="color: brown">lang</span> attribute. So, the first two
+      characters define the language of the HTML page, and the last two
+      characters define the country.
+    </p>
+
+    <h1>The title Attribute</h1>
+    <p>
+      The <span style="color: brown">title</span> attribute defines some extra
+      information about an element. The value of the title attribute will be
+      displayed as a tooltip when you mouse over the element. Example is given
+      below :
+    </p>
+
+    <p title="Hello!">Please hover me!</p>
+
+    <script>
+      window.onload = () => {
+        setTimeout(() => {
+          window.scrollTo(0, document.body.scrollHeight);
+        }, 100);
+      };
+    </script>
+  </body>
+</html>

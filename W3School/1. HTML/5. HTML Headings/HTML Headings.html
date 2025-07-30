@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Headings</title>
+    <style>
+      span {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body style="background-color: black; color: beige">
+    <h1>HTML Headings</h1>
+    <p>
+      HTML headings are titles or subtitles that you want to display on a
+      webpage. HTML Headings are defined with the <span>&lth1&gt</span> to
+      <span>&lth6&gt</span> tags.
+      <br />
+      <span>&lth1&gt</span> defines the most important heading.
+      <span>&lth6&gt</span> defines the least important heading.
+    </p>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>
+      Note : Browsers automatically add some white space (a margin) before and
+      after a heading.
+    </p>
+
+    <h1>Headings Are Important</h1>
+    <p>
+      Search engines use the headings to index the structure and content of your
+      web pages.
+      <br />
+      Users often skim a page by its headings. It is important to use headings
+      to show the document structure.
+      <br />
+      <br />
+      <span>&lth1&gt</span> headings should be used for main headings, followed
+      by <span>&lth2&gt</span>, then the less important <span>&lth3&gt</span>,
+      and so on.
+    </p>
+
+    <h1>Bigger Headings</h1>
+    <p>
+      Eacxh HTML heading has a default size. however, you can specify the size
+      for any heading with the style attribute, using the CSS
+      <span>font - size</span> property. Example is given below :
+    </p>
+
+    <h1 style="font-size: 60px">Bigger Heading</h1>
+
+    <script>
+      window.onload = () => {
+        setTimeout(() => {
+          window.scrollTo(0, document.body.scrollHeight);
+        }, 100);
+      };
+    </script>
+  </body>
+</html>
