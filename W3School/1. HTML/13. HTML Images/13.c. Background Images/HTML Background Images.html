@@ -34,11 +34,31 @@
 
     <!-- BESOK DILANJUT LAGI YA MATERI BACKGROUND IMAGENYA SETELAH BELAJAR GIT-->
 
+    <p>Also, to make sure the entire element is always covered, set the <span>background-attachment</span> property to <span>fixed:</span></p>
+
+    <p>This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions). Sample is given below :</p>
+
+    <div class="backgroundCover">
+        <p>I make a block nested with div. As you can see, the entire background is covered the div. To make it displayed as the original sized, i will set the background height.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ab dolorem, officiis odit tenetur obcaecati quos tempore reprehenderit dicta. Illo error debitis totam quam animi aperiam sint ex nihil culpa! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis quae reprehenderit omnis? Eum ad soluta temporibus amet impedit nam illum voluptatibus incidunt aspernatur quae. Nisi at nihil ea. Pariatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati vero modi, similique voluptatibus eaque sunt vitae laboriosam? Accusamus iste dicta optio, ipsa, non natus sint blanditiis repellendus dolorum in illum.</p>
+    </div>
+
+    <h2>Background Strecth</h2>
+    <p>If you want the background image to strecth to fit the entire element, you can set the <span>background-size</span> property to <span>100% 100%</span>. Example is given below :</p>
+
+    <div class="imageStretch">
+        <p>In this example, i will stretch the image. To see the difference, i will give another lorem to make it more clear.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eum aliquam repellat pariatur adipisci inventore perspiciatis fuga consequatur porro saepe recusandae deleniti, accusantium, qui et totam sed numquam doloribus eius? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab a doloremque fugit, quo dolorem ipsam autem incidunt impedit laboriosam quos! Accusamus ex alias quae earum et dignissimos hic id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quasi molestiae, odit cupiditate repellendus debitis accusantium facilis hic rerum maxime quae voluptatum autem eaque aliquam dolor ullam illum porro iure.</p>
+
+        <p>See the difference, it will tend to stretch the picture outside its aspect ratio.</p>
+    </div>
+
+
     <script>
         window.onload = () => {
             setTimeout(() => {
                 window.scrollTo(0, document.body.scrollHeight)
-            }, 100);
+            }, 4000);
         }
     </script>
 </body>

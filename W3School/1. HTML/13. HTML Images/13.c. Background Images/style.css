@@ -26,7 +26,7 @@ span {
     padding: 5px;
     margin: 2em 0px;
     height: 10em;
-    background-image: url(backgroundImageforParagraph.jpg);
+    background-image: url("backgroundImageforParagraph.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
@@ -35,5 +35,21 @@ span {
 
 .smallImage {
     height: 400px;
-    background-image: url(smallImage.jpg);
+    background-image: url("smallImage.jpg");
+}
+
+.backgroundCover {
+   background-image: url("backgroundCover.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   font-size: 4em;
+}
+
+.imageStretch {
+    background-image: url("backgroundCover.jpg");
+    background-repeat: no-repeat;
+    background-attachment: 100%;
+    background-size: 100% 100%;
+    font-size: 3em;
 }
