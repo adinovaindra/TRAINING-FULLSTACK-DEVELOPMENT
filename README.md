@@ -1,6 +1,6 @@
 # 📘 Training Fullstack Development
 
-This repository contains my **practice codes and exercises** during my web development learning journey.  
+This repository contains my **practice codes, exercises, and projects** during my web development learning journey.  
 
 ---
 
@@ -16,3 +16,5 @@ This repository contains my **practice codes and exercises** during my web devel
 
 ## 🎯 Purpose
 A personal **workspace** to track my progress and experiments while studying fullstack web development.  
+
+💡 You can explore different branches to preview what I’ve been working on.
